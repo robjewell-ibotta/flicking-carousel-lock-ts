@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "invoke": "vue invoke s3-deploy",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy-it": "vue-cli-service s3-deploy",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,7 +28,9 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^7.7.0",
     "eslint-plugin-vue": "^6.2.2",
+    "hard-source-webpack-plugin": "^0.13.1",
     "typescript": "^3.9.10",
+    "vue-cli-plugin-s3-deploy": "^4.0.0-rc4",
     "vue-template-compiler": "^2.6.11"
   }
 }
